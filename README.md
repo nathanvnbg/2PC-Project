@@ -4,7 +4,7 @@
 
 ## Setup
 
-See the included fabfile for getting it to run on GEE. Here is a brief list of important commands:
+See the included fabfile for getting it to run on GEE. Before running, slicelet urls should be set in coordinator.py and client.py. Here is a brief list of important commands:
 
 upload_replica/coordinator/client - uploads python source code to slicelet
 
