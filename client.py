@@ -2,7 +2,7 @@
 import xmlrpclib
 
 def main():
-    coordinator = xmlrpclib.Server('http://localhost:8000', allow_none=True)
+    coordinator = xmlrpclib.Server('http://10.0.0.241:8000', allow_none=True)
 
     coordinator.coord_put(1, "Test1")
     coordinator.coord_put(2, "Test2")

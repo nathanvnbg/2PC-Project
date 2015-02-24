@@ -152,7 +152,7 @@ class Replica(object):
 
 def main():
     replica = Replica()
-    server = SimpleXMLRPCServer.SimpleXMLRPCServer(("", 8001),
+    server = SimpleXMLRPCServer.SimpleXMLRPCServer(("", 8000),
                             allow_none=True)
     server.register_instance(replica)
     print("Replica ready.")

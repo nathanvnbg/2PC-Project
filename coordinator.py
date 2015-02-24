@@ -6,13 +6,12 @@ import xmlrpclib
 
 class Coordinator(object):
     def __init__(self):
-        self.name = "http://localhost:8000"
-        self.replicas_name = ["http://localhost:8001"]
+        self.name = "http://10.0.0.241:8000"
+        self.replicas_name = ["http://10.2.0.242:8000", "http://10.4.0.243:8000"]
         self.replicas = []
         self.tid = 0
 
         if os.path.isfile('coordinator.log'):
-            self.decision_request(5)
             self.recover()
             
         self.f = open('coordinator.log', 'a')
